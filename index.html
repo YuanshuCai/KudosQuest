@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>KudosQuest</title>
   <link rel="stylesheet" href="./styles/index.css">
   <link rel="icon" href="./assets/imgs/Kudos Quest Favicon (40 x 40 px).png" type="image/png">
-
+ <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
   <body>
     <header></header>
@@ -70,8 +68,13 @@
           </div>
         </section>
       </div>
-      <section class="game"></section>
-      <section class="reminder"></section>
+      <section class="game">
+        <h2 class="game__heading">Do you wanna play and relax with us?</h2>
+        <div class="game__cards"></div>
+      </section>
+      <section class="reminder">
+        <h2 class="reminder__heading">Remember: You are AWESOME!</h2>
+      </section>
     </main>
     <footer>
     <!-- <img src="./assets/imgs/Kudos Quest Logo.png" alt="KudosQuest Logo"> -->
@@ -105,4 +108,5 @@
 
   </footer>
     <script src="./scripts/comment-section.js"></script>
+    <script src="./scripts/game.js"></script>
   </body>

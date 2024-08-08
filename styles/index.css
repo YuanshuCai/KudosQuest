@@ -1,21 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
-<<<<<<< HEAD
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
-=======
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: "Lato", sans-serif;
-  width: 100%;
-}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
 
-ul {
-  list-style: none;
-}
+
 
 h1 {
   font-size: 2.986rem;
@@ -43,7 +29,6 @@ p {
   font-size: 1rem;
 }
 
->>>>>>> dev-yuan-hero-01
 @font-face {
   font-family: "Lato";
   src: url("../../assets/fonts/Lato-Regular.ttf") format("woff2");
@@ -65,7 +50,7 @@ p {
   font-style: thin;
   font-display: swap;
 }
-<<<<<<< HEAD
+
 * {
   margin: 0;
   padding: 0;
@@ -288,6 +273,112 @@ ul {
 .quotes-comments .comments__card__text {
   margin-top: 0;
   font-weight: 300;
+}
+
+.game {
+  padding: 3rem 2rem;
+}
+@media (min-width: 768px) {
+  .game {
+    padding: 5rem 3rem;
+  }
+}
+.game__heading {
+  font-family: "Josefin Slab", serif;
+  font-size: 32px;
+  font-weight: 200;
+  text-align: center;
+  color: #000;
+  margin-bottom: 4rem;
+}
+.game__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+.game__card {
+  width: 90%;
+  padding: 1.5rem 1.5rem;
+  border-radius: 8px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+@media (min-width: 768px) {
+  .game__card {
+    width: 40%;
+    padding: 3rem 3rem;
+    min-height: 20rem;
+  }
+}
+@media (min-width: 1290px) {
+  .game__card {
+    width: 25%;
+  }
+}
+.game__card__question {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 100;
+  text-align: center;
+}
+.game__card__button {
+  padding: 10px 15px;
+  width: 70%;
+  cursor: pointer;
+  font-weight: 100;
+}
+.game__card__button--true {
+  background-color: #e2f3c5;
+  border: 0;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+.game__card__button--false {
+  background-color: #ffbdbd;
+  border: 0;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+}
+
+.reminder {
+  background-color: #fffbfb;
+  padding: 3rem 3rem;
+}
+.reminder__heading {
+  font-family: "Josefin Slab", serif;
+  font-size: 32px;
+  font-weight: 200;
+  text-align: center;
+  color: #9b36de;
 
 footer {
   display: flex;
@@ -333,7 +424,6 @@ input {
   flex-direction: row;
   padding: 1rem;
 
-=======
 .hero__img--top {
   width: 100%;
   box-sizing: content-box;
@@ -409,5 +499,4 @@ input {
 .kudos__item-text {
   width: 100%;
   background-color: #fff;
->>>>>>> dev-yuan-hero-01
 }/*# sourceMappingURL=index.css.map */
