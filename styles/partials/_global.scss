@@ -1,7 +1,5 @@
-@use "./typography" as *;
-@use "./variables" as *;
-@use "./media" as *;
-@use "./mixins" as *;
+@import "./typography";
+@import "./mixins";
 
 * {
   margin: 0;
