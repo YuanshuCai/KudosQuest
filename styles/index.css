@@ -1,1 +1,139 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 2.986rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.488rem;
+}
+
+h3 {
+  font-size: 2.074rem;
+}
+
+h4 {
+  font-size: 1.728rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.44rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../assets/fonts/Lato-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../../assets/fonts/Lato-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../../assets/fonts/Lato-Thin.ttf") format("woff2");
+  font-weight: 300;
+  font-style: thin;
+  font-display: swap;
+}
+.hero__img--top {
+  width: 100%;
+  box-sizing: content-box;
+}
+.hero__img--bottom {
+  width: 100%;
+  box-sizing: content-box;
+}
+.hero__words {
+  background-color: #dae9fc;
+}
+.hero__words-wrapper {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+.hero__words--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.hero__words--left-author {
+  align-self: flex-end;
+}
+.hero__words--right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.kudos {
+  background-color: #fffcf3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.kudos__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.kudos__item {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 30%;
+  background-color: #bcddf8;
+}
+.kudos__item-wrapper {
+  width: 100%;
+  padding: 1rem;
+}
+.kudos__item-log {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.kudos__item-text {
+  width: 100%;
+  background-color: #fff;
+}/*# sourceMappingURL=index.css.map */

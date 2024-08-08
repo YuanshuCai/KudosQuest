@@ -1,0 +1,65 @@
+@use "./partials/global" as *;
+@use "./partials/typographys" as *;
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
+@use "./partials/colors" as *;
+
+.hero {
+  &__img {
+    &--top {
+      width: 100%;
+      box-sizing: content-box;
+    }
+    &--bottom {
+      width: 100%;
+      box-sizing: content-box;
+    }
+  }
+  &__words {
+    background-color: $hero-bg-blue-colour;
+    &-wrapper {
+      @include wrapper-padding(2rem);
+      @include flexbox-setting(row, space-around, center);
+      gap: 1rem;
+    }
+    &--left {
+      @include flexbox-setting(column, flex-start, flex-start);
+      &-author {
+        align-self: flex-end;
+      }
+    }
+    &--right {
+      width: 30%;
+      @include flexbox-setting(column, flex-start, flex-start);
+    }
+  }
+}
+.kudos{
+    background-color: $secondary-bg-colour;
+    @include flexbox-setting(column, flex-start, center);
+    &__list{
+        @include flexbox-setting(row, center, flex-start);
+        flex-wrap: wrap;
+        gap:2rem;
+    }
+    
+    &__item{
+        border-radius: 1rem;
+        @include flexbox-setting(column, center, flex-start);
+        width: 30%;
+        background-color: $kudo-card-bg-colour;
+        &-wrapper{
+            width: 100%;
+            padding: 1rem;
+        }
+        &-log{
+            width: 100%;
+            @include flexbox-setting(row, space-between, flex-start);
+        }
+        &-text{
+            width: 100%;
+            background-color: $primary-white-color;
+        }
+    }
+    
+}
