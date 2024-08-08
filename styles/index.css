@@ -377,7 +377,14 @@ p {
 }
 
 footer {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
   padding: 3rem 3rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -387,9 +394,10 @@ footer {
 }
 @media (min-width: 768px) {
   footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -399,29 +407,65 @@ footer {
   padding-top: 2rem;
 }
 
+.email__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+@media (min-width: 768px) {
+  .email__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.email__form button {
+  background-color: #D0B8A8;
+  border: 1px solid #D0B8A8;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .email__form button {
+    width: 50%;
+  }
+}
+.email__form input {
+  padding: 1rem;
+  border: solid 1px #D0B8A8;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .email__form input {
+    width: 90%;
+  }
+}
+
 h2 {
   font-family: "Josefin Slab", serif;
   font-weight: 100;
-  padding-bottom: 3rem;
-}
-
-button {
-  background-color: #D0B8A8;
-  padding: 1rem;
-  border: none;
-}
-
-input {
-  padding: 1rem;
-  border: solid 1px #D0B8A8;
 }
 
 .footer__c1 {
-  padding: 1rem;
-}
-
-.footer__c2 {
-  padding-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__c3 {
@@ -432,7 +476,6 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 1rem;
 }
 
 .hero {
@@ -534,6 +577,9 @@ input {
     padding: 4rem 5rem;
   }
 }
+.kudos__title {
+  margin-bottom: 2rem;
+}
 .kudos__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -607,4 +653,13 @@ input {
   background-color: #fff;
   padding: 1rem;
   margin-top: 1rem;
+}
+
+.load-more-button {
+  margin-top: 2rem;
+  font-weight: 100;
+}
+
+button {
+  font-family: "Lato", sans-serif;
 }/*# sourceMappingURL=index.css.map */

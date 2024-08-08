@@ -156,8 +156,13 @@ const kudos = [
     likes: getRandomLikes(2, 9),
   },
 ];
-
 const cardsList = document.getElementById("kudos__list");
+const loadMoreButton = document.createElement("button");
+loadMoreButton.textContent = "Load More";
+loadMoreButton.classList.add("load-more-button");
+
+let cardsToShow = 9;
+let currentIndex = 0;
 
 function makeKudoCard(kudoItem) {
   const cardItem = document.createElement("div");
@@ -192,9 +197,23 @@ function makeKudoCard(kudoItem) {
 }
 
 function displayKudoCards() {
-  cardsList.innerHTML = ""; // Clear existing kudos
-  kudos.forEach((kudoItem) => makeKudoCard(kudoItem));
+  const nextIndex = Math.min(currentIndex + cardsToShow, kudos.length);
+  for (let i = currentIndex; i < nextIndex; i++) {
+    makeKudoCard(kudos[i]);
+  }
+  currentIndex = nextIndex;
+
+  if (currentIndex >= kudos.length) {
+    loadMoreButton.style.display = "none";
+  }
 }
+
+loadMoreButton.addEventListener("click", () => {
+  cardsToShow = 6;
+  displayKudoCards();
+});
 
 // Call the display function to render the kudos
 displayKudoCards();
+
+cardsList.after(loadMoreButton);

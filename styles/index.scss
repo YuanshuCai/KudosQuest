@@ -175,13 +175,15 @@
 }
 
 footer {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   padding: 3rem 3rem;
   justify-content: space-between;
   background-color: $secondary-bg-colour;
   font-weight: 100;
   @include breakpoint(tablet) {
-    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -191,35 +193,51 @@ footer {
   padding-top: 2rem;
 }
 
+.email {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    @include breakpoint(tablet) {
+      flex-direction: row;
+    }
+    button {
+      background-color: $button-colour;
+      border: 1px solid $button-colour;
+      padding: 1rem;
+      border: none;
+      width: 100%;
+      @include breakpoint(tablet) {
+        width: 50%;
+      }
+    }
+
+    input {
+      padding: 1rem;
+      border: solid 1px $button-colour;
+      width: 100%;
+
+      @include breakpoint(tablet) {
+        width: 90%;
+      }
+    }
+  }
+}
+
 h2 {
   font-family: $heading-font;
   font-weight: 100;
-  padding-bottom: 3rem;
-}
-
-button {
-  background-color: $button-colour;
-  padding: 1rem;
-  border: none;
-}
-
-input {
-  padding: 1rem;
-  border: solid 1px $button-colour;
 }
 
 .footer__c1 {
-  padding: 1rem;
-}
-
-.footer__c2 {
-  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer__c3 {
   display: flex;
   flex-direction: row;
-  padding: 1rem;
 }
 
 .hero {
@@ -269,6 +287,10 @@ input {
   @include flexbox-setting(column, flex-start, center);
   flex-wrap: wrap;
 
+  &__title {
+    margin-bottom: 2rem;
+  }
+
   &__list {
     @include flexbox-setting(row, center, flex-start);
     flex-wrap: wrap;
@@ -305,4 +327,13 @@ input {
       margin-top: 1rem;
     }
   }
+}
+
+.load-more-button {
+  margin-top: 2rem;
+  font-weight: 100;
+}
+
+button {
+  font-family: $main-font;
 }
