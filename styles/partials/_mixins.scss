@@ -1,6 +1,5 @@
 @import "./colors";
 @import "./media";
-@import "./variables";
 
 @mixin display-justify-style($display, $justify) {
   display: $display;
