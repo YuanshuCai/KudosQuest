@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KudosQuest</title>
-    <link class="logo__favicon" src="./assets/imgs/icons/" />
-    <link rel="stylesheet" href="./styles/index.css" />
-  </head>
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KudosQuest</title>
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="icon" href="./assets/imgs/Kudos Quest Favicon (40 x 40 px).png" type="image/png">
+
+</head>
   <body>
     <header></header>
     <main>
@@ -46,17 +49,36 @@
       <section class="reminder"></section>
     </main>
     <footer>
-      <img src="./assets/imgs/logo" alt="KudosQuest Logo" />
-      <form class="email">
-        <label></label>
+    <!-- <img src="./assets/imgs/Kudos Quest Logo.png" alt="KudosQuest Logo"> -->
+    <div class="footer__c1">
+      <h2>KudosQuest</h2>
+      <p class="copyright">&copy 2024 All rights reserved.</p>
+    </div>
+    <div class="footer__c2">
+      <form class="email__form">
+        <!-- <label>Email Address</label> -->
+        <input type="email" id="email" placeholder="enter your email" required>
+        <button type="submit">Subscribe</button>
       </form>
-      <nav>
+    </div>
+    <div class="footer__c3">
+      <nav class="nav">
         <ul>
-          <a><li>Home</li></a>
-          <a><li>About</li></a>
+          <a>
+            <li>Home</li>
+          </a>
+          <a>
+            <li>About</li>
+          </a>
         </ul>
-      </nav>
-    </footer>
+        <a class="social__link" src="instagram.com/"><img class="social__icon" src="./assets/imgs/icons/instagram.png">
+        </a>
+        <a class="social__link" src="facebook.com/"><img class="social__icon" src="./assets/imgs/icons/facebook.png">
+        </a>
+    </div>
+    </nav>
+
+  </footer>
     <script src="./scripts/comment-section.js"></script>
   </body>
 </html>
