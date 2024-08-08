@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,19 +10,45 @@
   <link rel="icon" href="./assets/imgs/Kudos Quest Favicon (40 x 40 px).png" type="image/png">
 
 </head>
-
-<body>
-  <header></header>
-  <main>
-    <section class="hero"></section>
-    <div>
-      <section class="quotes"></section>
-      <section class="comments"></section>
-    </div>
-    <section class="game"></section>
-    <section class="reminder"></section>
-  </main>
-  <footer>
+  <body>
+    <header></header>
+    <main>
+      <section class="hero"></section>
+      <div class="quotes-comments">
+        <section class="quotes"></section>
+        <section class="comments">
+          <h2 class="comments__heading">Comments</h2>
+          <div class="comments__block">
+            <div class="comments__form">
+              <form id="form" method="post">
+                <div class="comments__form__name">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="comments__form__comment">
+                  <label for="comment">Comment</label>
+                  <textarea
+                    id="comment"
+                    name="comment"
+                    placeholder="Add a new comment"
+                  ></textarea>
+                </div>
+                <button class="comments__form__button">Comment</button>
+              </form>
+            </div>
+            <div id="comments-container" class="comments__cards"></div>
+          </div>
+        </section>
+      </div>
+      <section class="game"></section>
+      <section class="reminder"></section>
+    </main>
+    <footer>
     <!-- <img src="./assets/imgs/Kudos Quest Logo.png" alt="KudosQuest Logo"> -->
     <div class="footer__c1">
       <h2>KudosQuest</h2>
@@ -52,6 +79,6 @@
     </nav>
 
   </footer>
-</body>
-
+    <script src="./scripts/comment-section.js"></script>
+  </body>
 </html>

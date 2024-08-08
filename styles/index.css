@@ -25,6 +25,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 body {
@@ -35,6 +36,213 @@ body {
 ul {
   list-style: none;
 }
+
+
+.quotes-comments {
+  display: block;
+}
+@media (min-width: 768px) {
+  .quotes-comments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.quotes-comments .quotes {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .quotes-comments .quotes {
+    width: 60%;
+  }
+}
+.quotes-comments .comments {
+  padding: 3rem 3rem;
+  width: 100%;
+  background-color: #f7ebdc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 768px) {
+  .quotes-comments .comments {
+    width: 40%;
+  }
+}
+@media (min-width: 1290px) {
+  .quotes-comments .comments {
+    padding: 4rem 5rem;
+  }
+}
+.quotes-comments .comments__heading {
+  font-family: "Josefin Slab", serif;
+  font-size: 32px;
+  font-weight: 200;
+  margin-bottom: 2rem;
+}
+.quotes-comments .comments__block {
+  width: 100%;
+}
+.quotes-comments .comments__form {
+  padding-bottom: 2vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .quotes-comments .comments__form {
+    gap: 2rem;
+  }
+}
+.quotes-comments .comments__form form {
+  width: 100%;
+}
+.quotes-comments .comments__form form label {
+  text-transform: uppercase;
+  color: #94918e;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+.quotes-comments .comments__form form input {
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  padding: 0.75rem;
+  border: 1px solid #94918e;
+  line-height: normal;
+}
+.quotes-comments .comments__form form input::-webkit-input-placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form input::-moz-placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form input:-ms-input-placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form input::-ms-input-placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form input::placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form input:focus {
+  outline: 0;
+  border: 1px solid #000;
+}
+.quotes-comments .comments__form form input:focus.error {
+  border: 1px solid #000;
+}
+.quotes-comments .comments__form form input.error {
+  border: 1px solid rgb(148, 0, 0);
+}
+@media (min-width: 768px) {
+  .quotes-comments .comments__form form input {
+    padding: 1rem;
+  }
+}
+.quotes-comments .comments__form form textarea {
+  height: 4rem;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  padding: 0.75rem;
+  border: 1px solid #94918e;
+}
+.quotes-comments .comments__form form textarea::-webkit-input-placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form textarea::-moz-placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form textarea:-ms-input-placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form textarea::-ms-input-placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form textarea::placeholder {
+  color: #000;
+}
+.quotes-comments .comments__form form textarea:focus {
+  outline: 0;
+  border: 1px solid #000;
+}
+.quotes-comments .comments__form form textarea:focus.error {
+  border: 1px solid #000;
+}
+.quotes-comments .comments__form form textarea.error {
+  border: 1px solid rgb(148, 0, 0);
+}
+@media (min-width: 768px) {
+  .quotes-comments .comments__form form textarea {
+    padding: 1rem;
+  }
+}
+.quotes-comments .comments__form form button {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  border-radius: 4px;
+  height: 2.5rem;
+  float: right;
+  width: 100%;
+  font-weight: 200;
+}
+@media (min-width: 768px) {
+  .quotes-comments .comments__form form button {
+    padding: 1rem;
+    width: 9.375rem;
+    padding: 0 2rem;
+  }
+}
+.quotes-comments .comments__form form button:hover {
+  background-color: #000;
+}
+.quotes-comments .comments__card {
+  margin-bottom: 2rem;
+  border: 1px solid #94918e;
+  border-radius: 5px;
+  padding: 1rem 1rem;
+}
+.quotes-comments .comments__card__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.quotes-comments .comments__card__info--name {
+  margin-top: 0;
+}
+.quotes-comments .comments__card__info--date {
+  color: #94918e;
+  margin-top: 0;
+}
+.quotes-comments .comments__card__text {
+  margin-top: 0;
+  font-weight: 300;
 
 footer {
   display: flex;
@@ -79,4 +287,5 @@ input {
   display: flex;
   flex-direction: row;
   padding: 1rem;
+
 }/*# sourceMappingURL=index.css.map */

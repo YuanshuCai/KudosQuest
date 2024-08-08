@@ -1,5 +1,89 @@
 @import "./partials/global";
 
+
+.quotes-comments {
+  display: block;
+  @include breakpoint(tablet) {
+    display: flex;
+  }
+  .quotes {
+    width: 100%;
+    @include breakpoint(tablet) {
+      width: 60%;
+    }
+  }
+  .comments {
+    padding: 3rem 3rem;
+    width: 100%;
+    background-color: $comments-bg-colour;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include breakpoint(tablet) {
+      width: 40%;
+    }
+    @include breakpoint(desktop) {
+      padding: 4rem 5rem;
+    }
+    &__heading {
+      font-family: $heading-font;
+      font-size: 32px;
+      font-weight: 200;
+      margin-bottom: 2rem;
+    }
+    &__block {
+      width: 100%;
+    }
+    &__form {
+      padding-bottom: 2vh;
+      @include comment-block-style;
+      form {
+        @include form-style;
+        label {
+          text-transform: uppercase;
+          color: $comments-gray-colour;
+          display: block;
+          margin-bottom: 4px;
+          font-size: 12px;
+        }
+        input {
+          @include form-field-style;
+          line-height: normal;
+        }
+        textarea {
+          height: 4rem;
+          @include form-field-style;
+        }
+        button {
+          @include button-style;
+        }
+      }
+    }
+    &__card {
+      margin-bottom: 2rem;
+      border: 1px solid $comments-gray-colour;
+      border-radius: 5px;
+      padding: 1rem 1rem;
+      &__info {
+        @include display-justify-style(flex, space-between);
+        align-items: start;
+        &--name {
+          margin-top: 0;
+        }
+        &--date {
+          color: $comments-gray-colour;
+          margin-top: 0;
+        }
+      }
+      &__text {
+        margin-top: 0;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
 //Footer Styling 
 
 footer {
@@ -46,3 +130,4 @@ input {
     flex-direction: row;
     padding: 1rem;
 }
+
