@@ -280,7 +280,6 @@ ul {
   border-radius: 8px;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  min-height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,6 +290,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  gap: 1rem;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -299,6 +299,7 @@ ul {
   .game__card {
     width: 40%;
     padding: 3rem 3rem;
+    min-height: 20rem;
   }
 }
 @media (min-width: 1290px) {
