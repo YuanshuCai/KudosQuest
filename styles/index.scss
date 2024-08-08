@@ -1,0 +1,48 @@
+@import "./partials/global";
+
+//Footer Styling 
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social__icon {
+    width: 2rem;
+    height: auto;
+    padding-top: 2rem;
+}
+
+nav {
+    background-color: $secondary-bg-colour;
+}
+
+h2 {
+    font: $heading-font;
+    padding-bottom: 3rem;
+}
+
+button {
+    background-color: $button-colour;
+    padding: 1rem;
+    border: none;
+}
+
+input {
+    padding: 1rem;
+    border: solid 1px $button-colour;
+}
+
+.footer__c1 {
+    padding: 1rem;
+}
+
+.footer__c2 {
+    padding-top: 2rem;
+}
+
+.footer__c3 {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}

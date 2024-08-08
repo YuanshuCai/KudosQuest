@@ -1,1 +1,82 @@
-/*# sourceMappingURL=index.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: "Lato";
+  src: url("../../assets/fonts/Lato-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../../assets/fonts/Lato-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../../assets/fonts/Lato-Thin.ttf") format("woff2");
+  font-weight: 300;
+  font-style: thin;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social__icon {
+  width: 2rem;
+  height: auto;
+  padding-top: 2rem;
+}
+
+nav {
+  background-color: #fffcf3;
+}
+
+h2 {
+  font: "Josefin Slab", serif;
+  padding-bottom: 3rem;
+}
+
+button {
+  background-color: #D0B8A8;
+  padding: 1rem;
+  border: none;
+}
+
+input {
+  padding: 1rem;
+  border: solid 1px #D0B8A8;
+}
+
+.footer__c1 {
+  padding: 1rem;
+}
+
+.footer__c2 {
+  padding-top: 2rem;
+}
+
+.footer__c3 {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+}/*# sourceMappingURL=index.css.map */
