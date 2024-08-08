@@ -13,9 +13,34 @@
   <body>
     <header></header>
     <main>
-      <section class="hero"></section>
+      <section class="hero">
+        <div class="hero__img">
+          <img class="hero__img--top" src="./../assets/imgs/first-banner.jpeg">
+        </div>
+        <div class="hero__words">
+          <div class="hero__words-wrapper">
+            <div class="hero__words--left">
+              <h4>"Am I good enough?"</h4>
+              <h1>"Yes I am"</h1>
+              <h5 class ="hero__words--left-author">-Michelle Obama</h5>
+            </div>
+            <div class="hero__words--right">
+              <h5>Programmer: A machine that turns coffee into code.</h5>
+            </div>
+          </div>
+        </div>
+  
+        <div class="hero__img">
+          <img class="hero__img--bottom" src="./../assets/imgs/second-banner.jpeg">
+        </div>
+      </section>
       <div class="quotes-comments">
-        <section class="quotes"></section>
+        <section class="kudos">
+          <h2 class = "kudos__title">Kudo Cards</h2>
+          <div id="kudos__list" class = "kudos__list">
+            <!-- render Kudos from index-page.js -->
+          </div>
+        </section>
         <section class="comments">
           <h2 class="comments__heading">Comments</h2>
           <div class="comments__block">
@@ -81,4 +106,3 @@
   </footer>
     <script src="./scripts/comment-section.js"></script>
   </body>
-</html>
