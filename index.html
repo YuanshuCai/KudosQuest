@@ -6,6 +6,7 @@
     <title>KudosQuest</title>
     <link class="logo__favicon" src="./assets/imgs/icons/" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <header></header>
@@ -42,8 +43,13 @@
           </div>
         </section>
       </div>
-      <section class="game"></section>
-      <section class="reminder"></section>
+      <section class="game">
+        <h2 class="game__heading">Do you wanna play and relax with us?</h2>
+        <div class="game__cards"></div>
+      </section>
+      <section class="reminder">
+        <h2 class="reminder__heading">Remember: You are AWESOME!</h2>
+      </section>
     </main>
     <footer>
       <img src="./assets/imgs/logo" alt="KudosQuest Logo" />
@@ -58,5 +64,6 @@
       </nav>
     </footer>
     <script src="./scripts/comment-section.js"></script>
+    <script src="./scripts/game.js"></script>
   </body>
 </html>

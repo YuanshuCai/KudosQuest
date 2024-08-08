@@ -82,3 +82,93 @@
     }
   }
 }
+
+.game {
+  padding: 3rem 2rem;
+  @include breakpoint(tablet) {
+    padding: 5rem 3rem;
+  }
+
+  &__heading {
+    font-family: "Josefin Slab", serif;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+    color: $primary-black-colour;
+    margin-bottom: 4rem;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &__card {
+    width: 90%;
+    padding: 1.5rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    min-height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: stretch;
+
+    @include breakpoint(tablet) {
+      width: 40%;
+      padding: 3rem 3rem;
+    }
+
+    @include breakpoint(desktop) {
+      width: 25%;
+    }
+
+    &__question {
+      font-size: 18px;
+      margin-bottom: 10px;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    &__button {
+      padding: 10px 15px;
+      width: 70%;
+      cursor: pointer;
+      font-weight: 100;
+      &--true {
+        background-color: $true-green-colour;
+        border: 0;
+        border-radius: 5px;
+        padding: 1rem 1rem;
+        margin: 0 auto;
+        font-family: $main-font;
+        font-size: 20px;
+      }
+      &--false {
+        background-color: $false-red-colour;
+        border: 0;
+        border-radius: 5px;
+        padding: 1rem 1rem;
+        margin: 0 auto;
+        font-family: $main-font;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.reminder {
+  background-color: $reminder-bg-colour;
+  padding: 3rem 3rem;
+
+  &__heading {
+    font-family: "Josefin Slab", serif;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+    color: $reminder-font-colour;
+  }
+}
