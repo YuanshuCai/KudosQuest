@@ -1,7 +1,40 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: "Lato";
+  src: url("../../assets/fonts/Lato-Regular.ttf") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../../assets/fonts/Lato-Bold.ttf") format("woff2");
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Lato";
+  src: url("../../assets/fonts/Lato-Thin.ttf") format("woff2");
+  font-weight: 300;
+  font-style: thin;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
+body {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+}
 
+ul {
+  list-style: none;
+}
 
 h1 {
   font-size: 2.986rem;
@@ -28,45 +61,6 @@ h5 {
 p {
   font-size: 1rem;
 }
-
-@font-face {
-  font-family: "Lato";
-  src: url("../../assets/fonts/Lato-Regular.ttf") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../../assets/fonts/Lato-Bold.ttf") format("woff2");
-  font-weight: 700;
-  font-style: bold;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Lato";
-  src: url("../../assets/fonts/Lato-Thin.ttf") format("woff2");
-  font-weight: 300;
-  font-style: thin;
-  font-display: swap;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
 
 .quotes-comments {
   display: block;
@@ -379,10 +373,15 @@ ul {
   font-weight: 200;
   text-align: center;
   color: #9b36de;
+}
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .social__icon {
@@ -420,17 +419,25 @@ input {
 }
 
 .footer__c3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 1rem;
+}
 
 .hero__img--top {
   width: 100%;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 .hero__img--bottom {
   width: 100%;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 .hero__words {
   background-color: #dae9fc;
@@ -438,50 +445,105 @@ input {
 .hero__words-wrapper {
   margin-left: 2rem;
   margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
 }
 .hero__words--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .hero__words--left-author {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .hero__words--right {
   width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .kudos {
   background-color: #fffcf3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .kudos__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 2rem;
 }
 .kudos__item {
   border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 30%;
   background-color: #bcddf8;
 }
@@ -491,10 +553,19 @@ input {
 }
 .kudos__item-log {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .kudos__item-text {
   width: 100%;
