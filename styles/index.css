@@ -433,6 +433,8 @@ footer {
   padding: 1rem;
   border: none;
   width: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
 }
 @media (min-width: 768px) {
   .email__form button {
@@ -443,6 +445,8 @@ footer {
   padding: 1rem;
   border: solid 1px #D0B8A8;
   width: 100%;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
 }
 @media (min-width: 768px) {
   .email__form input {
@@ -662,4 +666,9 @@ h2 {
 
 button {
   font-family: "Lato", sans-serif;
+  background-color: #D0B8A8;
+  border: 1px solid #D0B8A8;
+  padding: 1rem;
+  border: none;
+  font-weight: 100;
 }/*# sourceMappingURL=index.css.map */

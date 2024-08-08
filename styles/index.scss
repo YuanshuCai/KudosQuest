@@ -207,6 +207,8 @@ footer {
       padding: 1rem;
       border: none;
       width: 100%;
+      font-family: $main-font;
+      font-weight: 100;
       @include breakpoint(tablet) {
         width: 50%;
       }
@@ -216,6 +218,8 @@ footer {
       padding: 1rem;
       border: solid 1px $button-colour;
       width: 100%;
+      font-family: $main-font;
+      font-weight: 100;
 
       @include breakpoint(tablet) {
         width: 90%;
@@ -336,4 +340,9 @@ h2 {
 
 button {
   font-family: $main-font;
+  background-color: $button-colour;
+  border: 1px solid $button-colour;
+  padding: 1rem;
+  border: none;
+  font-weight: 100;
 }
