@@ -1,0 +1,13 @@
+//typeface & weight
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+
+$main-font: "Lato", sans-serif;
+$heading-font: "Josefin Slab", serif;
+$weight-light: 300;
+$weight-regular: 400;
+$weight-demi: 600;
+$weight-bold: 700;
+
+$breakpoint-mobile: 767px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1290px;
