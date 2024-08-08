@@ -1,6 +1,9 @@
 @import "./typography";
 @import "./mixins";
 
+@use "./variables" as *;
+@use "./colors" as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -14,4 +17,26 @@ body {
 
 ul {
   list-style: none;
+}
+
+h1{
+  font-size:2.986rem;
+  font-weight: bold;
+}
+h2{
+  font-size:2.488rem;
+  
+}
+h3{
+  font-size: 2.074rem;
+}
+h4{
+  font-size: 1.728rem;
+  font-weight: $weight-regular;
+}
+h5{
+  font-size: 1.44rem;
+}
+p{
+  font-size: 1rem;
 }

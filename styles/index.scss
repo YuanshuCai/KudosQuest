@@ -1,3 +1,4 @@
+
 @import "./partials/global";
 
 .quotes-comments {
@@ -172,4 +173,112 @@
     text-align: center;
     color: $reminder-font-colour;
   }
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social__icon {
+    width: 2rem;
+    height: auto;
+    padding-top: 2rem;
+}
+
+nav {
+    background-color: $secondary-bg-colour;
+}
+
+h2 {
+    font: $heading-font;
+    padding-bottom: 3rem;
+}
+
+button {
+    background-color: $button-colour;
+    padding: 1rem;
+    border: none;
+}
+
+input {
+    padding: 1rem;
+    border: solid 1px $button-colour;
+}
+
+.footer__c1 {
+    padding: 1rem;
+}
+
+.footer__c2 {
+    padding-top: 2rem;
+}
+
+.footer__c3 {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+
+
+
+.hero {
+  &__img {
+    &--top {
+      width: 100%;
+      box-sizing: content-box;
+    }
+    &--bottom {
+      width: 100%;
+      box-sizing: content-box;
+    }
+  }
+  &__words {
+    background-color: $hero-bg-blue-colour;
+    &-wrapper {
+      @include wrapper-padding(2rem);
+      @include flexbox-setting(row, space-around, center);
+      gap: 1rem;
+    }
+    &--left {
+      @include flexbox-setting(column, flex-start, flex-start);
+      &-author {
+        align-self: flex-end;
+      }
+    }
+    &--right {
+      width: 30%;
+      @include flexbox-setting(column, flex-start, flex-start);
+    }
+  }
+}
+.kudos{
+    background-color: $secondary-bg-colour;
+    @include flexbox-setting(column, flex-start, center);
+    &__list{
+        @include flexbox-setting(row, center, flex-start);
+        flex-wrap: wrap;
+        gap:2rem;
+    }
+    
+    &__item{
+        border-radius: 1rem;
+        @include flexbox-setting(column, center, flex-start);
+        width: 30%;
+        background-color: $kudo-card-bg-colour;
+        &-wrapper{
+            width: 100%;
+            padding: 1rem;
+        }
+        &-log{
+            width: 100%;
+            @include flexbox-setting(row, space-between, flex-start);
+        }
+        &-text{
+            width: 100%;
+            background-color: $primary-white-color;
+        }
+    }
+    
 }
